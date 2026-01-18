@@ -1,0 +1,11 @@
+streamlit
+pandas
+plotly
+easyocr
+Pillow
+numpy
+opencv-python-headless
+langchain
+langgraph
+langchain-ollama
+sqlite3-binary
