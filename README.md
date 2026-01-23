@@ -1,48 +1,66 @@
-# 💰 AI Finance Agent (Streamlit + OCR + LLM)
+# AI Finance Agent – OCR & LLM-Driven Personal Finance Insights
 
-AI-powered personal finance dashboard that:
-- Reads receipt images with OCR
-- Classifies spending by category
-- Detects smart **TOTAL** amounts (not subtotals)
-- Saves everything to a live dashboard with charts and CSV export
-- Includes a separate **Finance Agent** notebook that analyzes a SQLite receipts database with Llama 3 and LangGraph.
+This project implements a **full-stack AI-driven personal finance tool** that combines **receipt OCR**, **visual analytics**, and a **language model agent** to analyze and provide insights from expense data. Users can upload receipts, automatically extract totals, categorize expenses, visualize spending trends, and interact with a LLM agent for contextual financial queries.
 
-## 🔧 Tech Stack
+*Role:* Contributor – implemented receipt OCR, Streamlit dashboard, and integrated LangGraph + LLaMA agent for expense analysis.
 
-- Streamlit (interactive web UI)
-- EasyOCR + Pillow + NumPy (receipt OCR)
-- Pandas + Plotly (analytics + charts)
-- SQLite (sample receipts database in notebook)
-- LangGraph + LangChain + Llama 3 (agentic analysis, in `finance_agent.ipynb`)
+---
 
-## 📂 Repository Structure
+## Problem Statement
 
-- `app.py` – Streamlit app:
-  - Upload receipts
-  - Smart TOTAL detection
-  - Category selection
-  - Live dashboard (metrics + pie chart)
-  - Editable recent transactions table with delete
-  - Clean CSV export
+Managing personal expenses manually is tedious and error-prone. This project automates the workflow:
 
-- `finance_agent.ipynb` – Notebook agent:
-  - Builds `receipts.db` with Sri Lankan LKR sample data
-  - Tools to load expenses and build charts
-  - Uses Llama 3 to summarize and give budget tips.[file:57]
+- Scan receipts using OCR
+- Automatically detect totals and categorize expenses
+- Visualize spending in charts and tables
+- Use an LLM agent to analyze historical data and answer questions in natural language
 
-## ▶️ How to Run the Streamlit App
+It bridges **computer vision**, **data analytics**, and **applied AI/ML** in one real-world project.
 
+---
+
+## Tech Stack
+
+- **Web UI:** Streamlit  
+- **OCR:** EasyOCR + Pillow  
+- **Data processing:** pandas, SQLite  
+- **Visualization:** Plotly  
+- **LLM/Agent:** LangGraph + LLaMA 3  
+- **Notebook prototyping:** Jupyter Notebook  
+- **Vector search & embeddings:** LangChain + FAISS
+
+---
+
+## Key Features
+
+- Automatic extraction of receipt totals using OCR  
+- Expense categorization & trend visualization  
+- Natural language financial insights via LLM agent  
+- CSV export for record keeping  
+- Interactive Streamlit dashboard for real-time analysis
+
+---
+
+## Installation & Quick Start
+
+Step 1: Clone the repository
 ```bash
-# 1. Clone repo
-git clone https://github.com/<your-username>/ai-finance-agent.git
+git clone https://github.com/Kalingu/ai-finance-agent.git
 cd ai-finance-agent
-
-# 2. Create env (optional but recommended)
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-
-# 3. Install dependencies
+```
+Step 2: Install dependencies
+```bash
 pip install -r requirements.txt
-
-# 4. Run the app
+```
+Step 3: Pull the local LLM using Ollama
+```bash
+ollama pull llama3.2:3b
+```
+Step 4: Run the Streamlit dashboard
+```bash
 streamlit run app.py
+```
+Step 5: Open the agent notebook for advanced analysis
+```bash
+jupyter notebook finance_agent.ipynb
+```
