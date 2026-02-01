@@ -64,3 +64,7 @@ Step 5: Open the agent notebook for advanced analysis
 ```bash
 jupyter notebook finance_agent.ipynb
 ```
+Step 6: run it from Jupyter
+```bash
+!streamlit run app.py
+```
