@@ -39,6 +39,10 @@ It bridges **computer vision**, **data analytics**, and **applied AI/ML** in one
 - CSV export for record keeping  
 - Interactive Streamlit dashboard for real-time analysis
 
+<img width="1000" height="563" alt="image" src="https://github.com/user-attachments/assets/bd43e288-88dc-4dca-9c7c-343b02cfa67d" />
+<img width="1000" height="563" alt="image" src="https://github.com/user-attachments/assets/d467504e-ba20-400d-9c47-b34bcf1610c0" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3534f91c-d079-4eea-9cfa-8593924d1cf8" />
+
 ---
 
 ## Installation & Quick Start
