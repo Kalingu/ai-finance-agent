@@ -2,6 +2,8 @@
 
 This project implements a **full-stack AI-driven personal finance tool** that combines **receipt OCR**, **visual analytics**, and a **language model agent** to analyze and provide insights from expense data. Users can upload receipts, automatically extract totals, categorize expenses, visualize spending trends, and interact with a LLM agent for contextual financial queries.
 
+> **Note:** The LLM integration (via LangGraph + Llama3.2) is prepared for advanced natural language queries, but the current system uses Python and pandas for all expense calculations. The LLM agent can be triggered on-demand for future query-based features.
+
 *Role:* Contributor – implemented receipt OCR, Streamlit dashboard, and integrated LangGraph + LLaMA agent for expense analysis.
 
 ---
